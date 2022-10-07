@@ -11,6 +11,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class ClientHandler {
     @SubscribeEvent
     public static void onJump(LivingEvent.LivingJumpEvent event) {
-        event.getEntityLiving().sendMessage(new TextComponentString(""));
+        event.getEntityLiving().sendMessage(new TextComponentString(TCPConnectorMod.INSTANCE.getPhrase()));
     }
 }
