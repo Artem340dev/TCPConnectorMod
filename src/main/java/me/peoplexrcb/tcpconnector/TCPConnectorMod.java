@@ -17,8 +17,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
         version = TCPConnectorMod.VERSION
 )
 public class TCPConnectorMod {
-    private static final String ADDRESS = "";
-    private static final int PORT = 0;
+    private static final String ADDRESS = "localhost";
+    private static final int PORT = 8080;
 
     public static final String MOD_ID = "tcpconnector";
     public static final String MOD_NAME = "TCPConnector";
