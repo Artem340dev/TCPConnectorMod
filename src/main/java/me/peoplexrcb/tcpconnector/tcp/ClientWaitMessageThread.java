@@ -10,7 +10,7 @@ public class ClientWaitMessageThread extends Thread {
     @Override
     public void run() {
         try {
-            DataInputStream in = (DataInputStream) TCPConnectorMod.INSTANCE.getClient().getSocket().getInputStream();
+            DataInputStream in = new DataInputStream(TCPConnectorMod.INSTANCE.getClient().getSocket().getInputStream());
             String phrase = in.readUTF();
 
             TCPConnectorMod.INSTANCE.setPhrase(phrase);
